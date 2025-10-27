@@ -5,7 +5,55 @@
     <title>Task App</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        
+        /* Style for the form rows */
+        .task-form-row {
+            display: flex;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        /* Description input takes up 90% */
+        .task-form-left {
+            width: 90%;
+        }
+
+        /* Status dropdown and Add button take up 10% */
+        .task-form-right {
+            width: 10%;
+        }
+
+        /* Optional: make inputs and button look nicer */
+        input, select, button {
+            padding: 8px;
+            box-sizing: border-box;
+        }
+
+        /* Optional: spacing between tasks */
+        .row {
+            margin-bottom: 10px;
+        }
+
+        .task-description {
+            display: inline-block;
+            width: 250px;
+        }
+
+        .task-status {
+            display: inline-block;
+            font-weight: bold;
+        }
+
+        .todo {
+            color: red;
+        }
+
+        .doing {
+            color: orange;
+        }
+
+        .done {
+            color: green;
+        }
     </style>
 </head>
 
@@ -24,6 +72,7 @@
             <button class="task-form-right" type="submit">Add</button>
         </div>
     </form>
+
     <div id="tasks">
         <div id="task-row-1" class="row">
             <div id="task-description-1" class="task-description">pack spikes for track meet</div>
